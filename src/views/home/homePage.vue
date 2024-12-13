@@ -7,6 +7,7 @@ vueMetaInput('【寐 . 力】Sleep Power 我們的高品質臥具，讓您補充
 </script>
 
 <template>
+<cursorEffect></cursorEffect>
 <navbarView></navbarView>
 <headerView></headerView>
 <cartCanvas></cartCanvas>

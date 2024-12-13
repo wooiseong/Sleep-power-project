@@ -1,4 +1,5 @@
 <template>
+  <cursorEffect></cursorEffect>
   <div>
     <div class="mt-5 text-danger">
       <font-awesome-icon class="display-1" data-aos="fade-right" icon="fa-solid fa-face-sad-tear" />

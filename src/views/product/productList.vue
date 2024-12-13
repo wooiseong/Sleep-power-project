@@ -7,6 +7,8 @@ import { useToast } from "vue-toastification"
 import { useLoading } from 'vue-loading-overlay'
 import { vueMetaInput } from '@/utils/vueMetaSetting'
 
+vueMetaInput('寐產品 | 寐力補充倉庫，包含床褥，枕頭和沙發，任君挑選 - 【寐 . 力】Sleep Power')
+
 const $loading = useLoading({
   color: '#0072E3',  
   width: 80,
@@ -24,14 +26,12 @@ const productList = ref([])
 const useProductType = async (type) => {
   const res = await getProductType(type)
   productList.value = res.data
-  vueMetaInput(`${keyWords.value} | 寐產品皆是臥具的精品 - 【寐 . 力】Sleep Power`)
 }
 
 //取得特定種類產品
 const useProductList = async () => {
   const res = await getProductList()
   productList.value = res.data
-  vueMetaInput('寐產品 | 寐力補充倉庫，包含床褥，枕頭和沙發，任君挑選 - 【寐 . 力】Sleep Power')
 }
 
 if (keyWords.value){
@@ -76,6 +76,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <cursorEffect></cursorEffect>
   <navbarView></navbarView>
   <cartCanvas></cartCanvas>
   <navtoTop></navtoTop>

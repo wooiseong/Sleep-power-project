@@ -18,6 +18,7 @@ const progressBarMove = () => {
 
 <template>
   <div>
+    <cursorEffect></cursorEffect>
     <navbarView></navbarView>
     <cartCanvas></cartCanvas>
     <navtoTop></navtoTop>

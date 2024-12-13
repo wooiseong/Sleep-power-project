@@ -3,8 +3,6 @@
 
 <template>
 <div>
-  <cursorEffect>
-  </cursorEffect>
   <router-view>
   </router-view>
 </div>

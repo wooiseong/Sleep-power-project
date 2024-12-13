@@ -5,6 +5,7 @@ vueMetaInput('寐理念 | 我們的臥具因需求而生,經過層層研發找�
 </script>
 
 <template>
+  <cursorEffect></cursorEffect>
   <navbarView></navbarView>
   <cartCanvas></cartCanvas>
   <navtoTop></navtoTop>

@@ -7,6 +7,8 @@ import { useCartStore } from '@/stores/modules/cart'
 import { useToast } from "vue-toastification"
 import { vueMetaInput } from '@/utils/vueMetaSetting'
 
+vueMetaInput('寐產品 | 寐力補充倉庫，包含床褥，枕頭和沙發，任君挑選 - 【寐 . 力】Sleep Power')
+
 const toast = useToast()
 const detailList = ref([])
 const keyWords = ref('')
@@ -16,13 +18,14 @@ keyWords.value = route.query.itemId
 const useProductInfo = async () => {
   const res = await getProductInfo(keyWords.value)
   detailList.value = res.data[0]
-  vueMetaInput(`${detailList.value.name} , ${detailList.value.size}公分 - 【寐 . 力】Sleep Power`)
 }
 useProductInfo()
 
 let n = ref(1)
 let quantityChange = ref(1)
 quantityChange.value = n
+console.log(n)
+console.log(quantityChange)
 const useCartList = useCartStore()
 
 const storeCart = (detailList, quantityChange) => {
@@ -39,6 +42,7 @@ watch(() => route.query.itemId, (newVal) => {
 </script>
 
 <template>
+  <cursorEffect></cursorEffect>
   <navbarView></navbarView>
   <cartCanvas></cartCanvas>
   <navtoTop></navtoTop>
@@ -80,7 +84,7 @@ watch(() => route.query.itemId, (newVal) => {
                 <button @click="n--" :disabled="n <= 1 "  class="btn btn-info">
                   <font-awesome-icon icon="fa-solid fa-minus" />
                 </button>
-                <input type="text" v-model.number="quantityChange" class="form-control text-center" style="max-width: 30%;" placeholder="1" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" v-model.number="quantityChange.value" class="form-control text-center" style="max-width: 30%;" placeholder="1" aria-label="Username" aria-describedby="basic-addon1">
                 <button  @click="n++" class="btn btn-info">
                   <font-awesome-icon  icon="fa-solid fa-plus" />
                 </button>

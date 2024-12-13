@@ -5,9 +5,8 @@ import { gsap } from 'gsap'
 onMounted(() => {
   const cursorBig = document.getElementById('cursor-big'),
         cursorSmall = document.getElementById('cursor-small'),
-        links = document.getElementsByTagName("a"),
         withClassHover = document.getElementsByClassName("cursor-hover"),
-        withHover = [...links, ...withClassHover];
+        withHover = [...withClassHover];
 
   document.addEventListener("mousemove", onMouseMove);
   document.addEventListener("mousedown", onMouseHover);

@@ -41,6 +41,7 @@ const loader = $loading.show({
 </script>
 
 <template>
+  <cursorEffect></cursorEffect>
    <section class="mt-4">
     <div class="total_list">
       <div class="container px-2 px-lg-4">
