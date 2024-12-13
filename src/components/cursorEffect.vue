@@ -28,8 +28,8 @@ onMounted(() => {
   function onMouseMove(e) {
     cursorSmall.style.opacity = 1;
     gsap.to(cursorBig, 0.4, {
-      x: e.clientX - 20,
-      y: e.clientY - 20
+      x: e.clientX - 17,
+      y: e.clientY - 17
     });
     gsap.to(cursorSmall, 0.1, {
       x: e.clientX - 4,
