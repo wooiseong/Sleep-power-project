@@ -4,9 +4,9 @@
       <div class="carousel_area">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item carousel_holder active" style="background-image: url('https://i.ibb.co/710X04x/carou2.jpg');">
+            <div class="carousel-item carousel_holder active" style="background-image: url('https://i.ibb.co/HK2QgFP/carou2.jpg');">
             </div>
-            <div class="carousel-item carousel_holder" style="background-image: url('https://i.ibb.co/CHbrbdY/carou1.jpg');">
+            <div class="carousel-item carousel_holder" style="background-image: url('https://i.ibb.co/sbB5B00/carou1.jpg');">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

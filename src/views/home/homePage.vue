@@ -2,6 +2,8 @@
 import swiperProduct from '@/components/swiperProduct.vue'
 import { vueMetaInput } from '@/utils/vueMetaSetting'
 vueMetaInput('【寐 . 力】Sleep Power 我們的高品質臥具，讓您補充寐力值')
+
+
 </script>
 
 <template>

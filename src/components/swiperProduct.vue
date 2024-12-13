@@ -58,7 +58,7 @@ const swiperProductDetail = (itemId) => {
     <swiper-slide v-for="(item) in promotionList" :key="item.itemId">
         <div class="card">
         <a href="#" @click="swiperProductDetail(item.itemId)" >
-          <img :src="item.image" class="card-img-top img-fluid" style="object-fit: cover;" alt="...">
+          <img loading="lazy" :src="item.image" class="card-img-top img-fluid" style="object-fit: cover;">
           <div class="img_tag text-white" :class="{  'bg-success': item.type === '床褥', 'bg-warning': item.type === '枕頭', 'bg-danger': item.type === '沙發'}">{{ item.type }}</div>
           <div class="card_tag">
             <div class="card_tag_text fs-4">商品資訊</div>
