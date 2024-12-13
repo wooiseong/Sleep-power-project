@@ -167,16 +167,16 @@ h1, .h1, h2, .h2, h3, .h3 {
 
 .custom-cursor__ball--big {
   content: "";
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: #003D79;
   border-radius: 50%;
 }
 
 .custom-cursor__ball--small {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #FFFF37;
   border-radius: 50%;
 }
